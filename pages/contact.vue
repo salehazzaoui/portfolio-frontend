@@ -5,10 +5,10 @@ definePageMeta({
 </script>
 
 <template>
-    <div class="h-screen">
+    <div class="h-full">
       <Intro name="Contact" icon="mdi-email"/>
-      <div class="d-flex align-center mt-10">
-        <v-list density="compact" class="w-50 mx-10">
+      <div class="d-flex flex-column flex-md-row align-center mt-10">
+        <v-list density="compact" class="w-50 mx-10 my-4">
           <v-list-subheader>Haiba Azzaoui</v-list-subheader>
 
           <v-list-item
@@ -52,7 +52,7 @@ definePageMeta({
             <v-list-item-title><a href="https://www.facebook.com/saleh.azzaoui11" target="_blank" rel="noopener noreferrer">Facebook</a></v-list-item-title>
           </v-list-item>
         </v-list>
-        <form class="w-50 mx-10">
+        <form class="w-50 mx-10 my-4">
           <v-text-field
             :counter="10"
             label="Name"
