@@ -15,6 +15,7 @@ const query2 = groq`*[_type == "tag"]{
    title
 }`;
 const { data: tags } = useSanityQuery(query2);
+const selection = ref(null);
 </script>
 
 <template>

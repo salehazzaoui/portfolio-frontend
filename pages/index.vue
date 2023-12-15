@@ -2,6 +2,12 @@
 definePageMeta({
   title: 'Home'
 });
+useHead({
+  title: 'Haiba Azzaoui',
+  meta: [
+    { name: 'description', content: 'I am a Software Enginner graduate 🎓 at USTHB, Experienced Full Stack Engineer with a demonstrated history of working in the information services industry. Skilled in PHP, English, Laravel, Next.js, and JavaScript. Strong engineering professional with a Computer science focused in Information Technology from Tamanrasset .' }
+  ],
+});
 const query = groq`*[_type == "author"][0]{
   bio,
   description,

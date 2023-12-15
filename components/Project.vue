@@ -26,7 +26,6 @@ defineProps({
     },
 });
 const loading = ref(false);
-const selection = ref(1);
 
 const explore = () => {
     loading.value = true
@@ -75,7 +74,7 @@ const explore = () => {
       <v-divider class="mx-4 mb-1"></v-divider>
   
       <div class="px-4">
-        <v-chip-group v-model="selection">
+        <v-chip-group>
           <v-chip v-for="tag in tags">{{ tag }}</v-chip>
         </v-chip-group>
       </div>
